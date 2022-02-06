@@ -1,0 +1,13 @@
+@use "../partials/typography" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #fffdf7;
+  color: #444444;
+  font-family: "Titillium Web", sans-serif;
+}

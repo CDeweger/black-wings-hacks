@@ -1,0 +1,41 @@
+@use "../../styles/partials/globals";
+
+.footer {
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: lightgray;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+  padding: 16px 48px 24px 48px;
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-bottom: 16px;
+  }
+
+  &__nav-item {
+    height: 20px;
+  }
+
+  &__copyright {
+    text-transform: capitalize;
+  }
+
+  &__chat {
+    display: flex;
+    align-self: center;
+    gap: 8px;
+    background: #fdd85d;
+    padding: 10px 15px;
+    border: 1px solid #fdd85d;
+    border-radius: 25px;
+    position: absolute;
+    right: 48px;
+  }
+}

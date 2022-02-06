@@ -1,0 +1,144 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/globals" as *;
+
+// *************** hero section *******************
+.hero {
+  font-size: 14px;
+  position: relative;
+  background: url("../../assets/images/hero.jpeg");
+  background-repeat: no-repeat;
+  background-position: top 35% left 0;
+  background-size: cover;
+  height: 70vh;
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding-left: 6rem;
+
+  &__text {
+    font-size: 3rem;
+    color: $color-blue;
+    text-transform: capitalize;
+  }
+
+  &__strong {
+    font-size: 4rem;
+    color: rgb(245, 124, 144);
+  }
+}
+
+.section {
+  padding: 3rem 6rem;
+}
+
+// ************* about section **************
+.about {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #6798c0;
+    margin-top: 4rem;
+    font-size: 2rem;
+  }
+
+  &__subtitle {
+    padding-bottom: 16px;
+    color: #6798c0;
+  }
+  &__wrapper {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+  }
+  &__wrapper2 {
+    width: 600px;
+    align-self: center;
+  }
+  &__image {
+    @include home-img("../../assets/images/about.jpeg");
+  }
+
+  &__text {
+    line-height: 2;
+    font-size: 1rem;
+  }
+
+  &__strong {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+}
+
+//***************** explore section *************
+.explore {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: $color-yellow;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+
+  &__wrapper {
+    width: 600px;
+    align-self: center;
+  }
+  &__title {
+    padding-bottom: 16px;
+    color: #6798c0;
+  }
+
+  &__image {
+    @include home-img("../../assets/images/explore.png");
+  }
+}
+
+// *************** donate section *************
+
+.donate {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  &__subtitle {
+    padding-bottom: 16px;
+    color: #6798c0;
+  }
+  &__wrapper {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+  }
+  &__wrapper2 {
+    width: 600px;
+    align-self: center;
+  }
+  &__image {
+    @include home-img("../../assets/images/donation.png");
+  }
+}
+
+//***************** more content section *************
+.more-content {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #fdd85d;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+
+  &__wrapper {
+    width: 600px;
+    align-self: center;
+  }
+  &__title {
+    padding-bottom: 16px;
+    color: #6798c0;
+  }
+
+  &__image {
+    @include home-img("../../assets/images/join.jpeg");
+  }
+}
